@@ -11,11 +11,10 @@ PHOTO = [
     "https://telegra.ph/file/6c97af926e1f1cd54c146.jpg",
 ]
 
-    else:
-        await message.reply_chat_action("typing")
-        m=await message.reply_sticker("CAACAgUAAxkBAAPLYhmLeQjtiqPZJEHOFh4KFOjbWzcAAvgDAAKfRIlXnd2oxpsLJeYeBA")
-        await m.delete()
-        await message.reply_chat_action("typing")
+@Bot.on_message(filters.private & filters.command(["start"]))
+async def start(bot, update):
+    if not await db.is_user_exist(update.from_user.id):
+        await db.add_user(update.from_user.id)  
         await message.reply_photo(
             photo=f"{random.choice(PHOTO)}",
             caption=script.STRT_MSG,

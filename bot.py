@@ -60,7 +60,7 @@ class Chat:
         self.message_id = msg['message_id']
 
         self.messages = {
-            'start':'🤖 Hello, '+ self.user_name +'!\n\n'
+            'd':'🤖 Hello, '+ self.user_name +'!\n\n'
                     '📩 Send me:\n\n'
                     '"*/music* _song name_"  or\n'
                     '"*/music* _musician name - song name_"\n\n'

@@ -135,7 +135,7 @@ class Chat:
         if user_input.startswith('/start'):
         await message.reply_photo(
             photo=f"{random.choice(PHOTO)}"
-            script.START_MSG
+            script.START_MSG)
 
         elif user_input.startswith('/music') and user_input[6:]!='':
             if 'open.spotify.com' in user_input[6:]:

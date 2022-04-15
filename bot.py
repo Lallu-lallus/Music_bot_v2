@@ -122,6 +122,8 @@ class Chat:
 
     def check_input(self, user_input, msg):
         if user_input.startswith('/start'):
+        await message.reply_photo(
+            photo=f"{random.choice(PHOTO)}"
             script.START_MSG
 
         elif user_input.startswith('/music') and user_input[6:]!='':

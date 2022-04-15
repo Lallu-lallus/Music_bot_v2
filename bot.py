@@ -122,7 +122,7 @@ class Chat:
 
     def check_input(self, user_input, msg):
         if user_input.startswith('/start'):
-            self.send_message(self.messages['start'])
+            script.START_MSG
 
         elif user_input.startswith('/music') and user_input[6:]!='':
             if 'open.spotify.com' in user_input[6:]:

@@ -134,8 +134,7 @@ class Chat:
     def check_input(self, user_input, msg):
         if user_input.startswith('/start'):
         await message.reply_txt(
-            Script.START_MSG
-            caption=script.STRT_MSG,
+            Script.START_MSG,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [

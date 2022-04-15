@@ -60,11 +60,7 @@ class Chat:
         self.message_id = msg['message_id']
 
         self.messages = {
-            'd':'🤖 Hello, '+ self.user_name +'!\n\n'
-                    '📩 Send me:\n\n'
-                    '"*/music* _song name_"  or\n'
-                    '"*/music* _musician name - song name_"\n\n'
-                    'to order some music. 🎶',
+            'start':'Hey Buddy I am simple music bot\n\n add me to ur grp and ask music\n\n commands /music song name',
             
             'spotify_input_error':"‼️ *Oops! The bot doesn't support Spotify links!*\n"
                     'Try: "*/music* _song name_"\n'

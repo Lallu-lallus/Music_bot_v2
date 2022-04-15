@@ -135,8 +135,19 @@ class Chat:
         if user_input.startswith('/start'):
         await message.reply_photo(
             photo=f"{random.choice(PHOTO)}"
-            Script.START_MSG)
-      
+            Script.START_MSG
+            caption=script.STRT_MSG,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("😎 About", callback_data="about")
+                    ],
+                    [
+                        InlineKeyboardButton("➕ Add Me To Your Group ➕", url="https://t.me/proannaben_bot?startgroup=true")
+                    ]
+                ]
+            )
+        )      
 
         elif user_input.startswith('/music') and user_input[6:]!='':
             if 'open.spotify.com' in user_input[6:]:

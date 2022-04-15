@@ -1,2 +1,2 @@
-from script import START_MSG
+from Script import script
 

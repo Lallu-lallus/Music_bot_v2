@@ -1,0 +1,20 @@
+{
+  "name": "Music_Bot_V2",
+  "description": "Music downloader bot in telegram",
+	"stack": "container",
+  "repository": "https://github.com/Lallu-lallus/Music_bot_v2",
+  "keywords": [
+  "python", 
+  "chatbot", 
+  "telegrambot"
+  ],
+  "website": "https://github.com/Lallu-lallus/Music_bot_v2",
+  "success_url": "https://t.me/lallu_tg",
+  "env": {
+    "TOKEN": {
+      "description": "Make a bot at BotFather http://telegram.dog/BotFather and get the token of your bot",
+      "value": "",
+      "required": true
+    }
+  }
+}

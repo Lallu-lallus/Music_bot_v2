@@ -133,8 +133,7 @@ class Chat:
 
     def check_input(self, user_input, msg):
         if user_input.startswith('/start'):
-        await message.reply_photo(
-            photo=f"{random.choice(PHOTO)}"
+        await message.reply_txt(
             Script.START_MSG
             caption=script.STRT_MSG,
             reply_markup=InlineKeyboardMarkup(
